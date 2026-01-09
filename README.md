@@ -237,6 +237,32 @@ python check_vectordb.py
 
 ## 🏗️ Architecture
 
+### System Architecture Overview
+
+The following diagram illustrates the complete architecture of the LLM-based email agent with its multi-tier memory system:
+
+![LLM Email Agent Architecture](images/llm_email_agent_memory_architecture.png)
+
+**Key Components:**
+- **Email Triage & Classification**: Automatically classifies incoming emails using rule-based and few-shot learning approaches
+- **Automatic Memory Loading Pipeline**: Five-stage process that gathers relevant context from multiple memory tiers
+- **Response Generation**: LLM processes enriched context and generates responses with function calling capabilities
+- **Memory Update & Consolidation**: Writes new interactions back to all memory tiers for future reference
+
+### Methodology Flow
+
+The system follows a comprehensive methodology for processing emails, as shown in the diagram below:
+
+![Multi-Tier Memory Methodology](images/multi_tier_memory_email_agent_methodology.png)
+
+**Process Flow:**
+1. **Incoming Email** → Received and queued for processing
+2. **Email Triage** → Classification into Ignore, Notify, or Respond categories
+3. **Memory Loading** → Automatic retrieval from Hot (SQL), Warm (Vector), and Cold (Archive) memory tiers
+4. **Context Assembly** → Deduplication and token management before prompt construction
+5. **Response Generation** → LLM generates response with optional function calls
+6. **Memory Update** → New email-response pairs stored across all memory tiers
+
 ### Memory Tiers
 
 1. **Hot Memory (SQL Database)**
