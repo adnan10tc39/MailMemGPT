@@ -55,16 +55,19 @@ langgraph/
 *.md
 !README.md
 
-# Images (exclude AI_RT.png as requested)
-AI_RT.png
-images/AI_RT.png
-
-# Allow useful images
-!images/methodology.jpeg
+# Images - exclude all by default, then allow specific ones
+*.png
+*.jpg
+*.jpeg
+# Allow useful images in images folder
 !images/llm_email_agent_memory_architecture.png
 !images/multi_tier_memory_email_agent_methodology.png
 !images/memory.png
+!images/methodology.jpeg
 !images/lost-in-the-middle.jpg
+# Explicitly exclude AI_RT.png
+AI_RT.png
+images/AI_RT.png
 
 # OS files
 .DS_Store
@@ -89,7 +92,4 @@ Thumbs.db
 
 # Other
 new_methodology
-methodology.jpeg
-*.jpeg
-*.jpg
 !README.md
