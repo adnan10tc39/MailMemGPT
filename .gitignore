@@ -59,6 +59,13 @@ langgraph/
 AI_RT.png
 images/AI_RT.png
 
+# Allow useful images
+!images/methodology.jpeg
+!images/llm_email_agent_memory_architecture.png
+!images/multi_tier_memory_email_agent_methodology.png
+!images/memory.png
+!images/lost-in-the-middle.jpg
+
 # OS files
 .DS_Store
 Thumbs.db
