@@ -1,0 +1,88 @@
+# Environment variables
+.env
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+mem_env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Data files (keep structure but ignore actual data)
+data/chatbot.db
+data/vectordb/
+*.db
+*.sqlite
+*.sqlite3
+
+# Documentation (exclude as requested)
+documentation/
+letta/
+langgraph/
+
+# Markdown files (except README.md)
+*.md
+!README.md
+
+# Images (exclude AI_RT.png as requested)
+AI_RT.png
+images/AI_RT.png
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# PDFs
+*.pdf
+
+# Word documents
+*.docx
+
+# Other
+new_methodology
+methodology.jpeg
+*.jpeg
+*.jpg
+!README.md
