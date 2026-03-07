@@ -1,4 +1,4 @@
-# MailMemGPT: LLM-Based Email Agent with Long-Term Memory
+# MailRecallAI: Automated Long Term Memory Management for LLM Based Email Agents Using Hybrid Multi Tier Storage
 
 A production-ready email agent system that implements a multi-tier memory architecture for LLM-based email management. The system automatically classifies emails, maintains long-term context through hybrid storage (SQL + Vector Database), and generates intelligent responses using GPT models.
 
@@ -26,8 +26,8 @@ A production-ready email agent system that implements a multi-tier memory archit
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/adnan10tc39/MailMemGPT.git
-cd MailMemGPT
+git clone https://github.com/adnan10tc39/MailRecallAI.git
+cd MailRecallAI
 ```
 
 ### Step 2: Create Virtual Environment
@@ -335,7 +335,7 @@ vectordb_config:
 ## 📁 Project Structure
 
 ```
-MailMemGPT/
+MailRecallAI/
 ├── config/
 │   └── config.yml                    # Configuration file
 ├── data/                             # Data storage (created automatically)
