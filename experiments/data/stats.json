@@ -1,0 +1,47 @@
+{
+  "seed": 1000,
+  "n_emails": 500,
+  "class_counts": {
+    "NOTIFY": 150,
+    "IGNORE": 200,
+    "RESPOND": 150
+  },
+  "n_threads": 401,
+  "n_multi_threads": 42,
+  "multi_thread_emails": 141,
+  "max_thread_len": 5,
+  "n_context_dependent": 123,
+  "n_class_critical": 44,
+  "class_critical_by_design": {
+    "A-RESPOND": 10,
+    "A-NOTIFY": 10,
+    "B-RESPOND": 8,
+    "B-IGNORE": 8,
+    "C-NOTIFY": 3,
+    "C-IGNORE": 5
+  },
+  "day_min": 1,
+  "day_max": 84,
+  "pilot_ids": [
+    "syn-0001",
+    "syn-0003",
+    "syn-0005",
+    "syn-0011",
+    "syn-0022",
+    "syn-0027",
+    "syn-0032",
+    "syn-0046",
+    "syn-0060",
+    "syn-0096",
+    "syn-0116",
+    "syn-0176",
+    "syn-0214",
+    "syn-0236",
+    "syn-0312",
+    "syn-0324",
+    "syn-0386",
+    "syn-0441",
+    "syn-0498",
+    "syn-0500"
+  ]
+}
