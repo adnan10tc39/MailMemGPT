@@ -1,0 +1,128 @@
+{
+  "dataset": "experiments/data/synthetic_500.jsonl",
+  "window": 10,
+  "n_cases": 62,
+  "n_beyond_window": 47,
+  "runs": {
+    "p1_syn": {
+      "n_scored": 60,
+      "n_without_draft": 2,
+      "grounding_rate": 0.2,
+      "in_window_rate": 0.1429,
+      "beyond_window_rate": 0.2174,
+      "examples": [
+        {
+          "email_id": "syn-0063",
+          "anchors_found": [
+            "given"
+          ]
+        },
+        {
+          "email_id": "syn-0165",
+          "anchors_found": [
+            "any"
+          ]
+        },
+        {
+          "email_id": "syn-0169",
+          "anchors_found": [
+            "week"
+          ]
+        },
+        {
+          "email_id": "syn-0207",
+          "anchors_found": [
+            "looking"
+          ]
+        },
+        {
+          "email_id": "syn-0217",
+          "anchors_found": [
+            "for"
+          ]
+        }
+      ]
+    },
+    "p2_syn": {
+      "n_scored": 60,
+      "n_without_draft": 2,
+      "grounding_rate": 0.3,
+      "in_window_rate": 0.1429,
+      "beyond_window_rate": 0.3478,
+      "examples": [
+        {
+          "email_id": "syn-0100",
+          "anchors_found": [
+            "okafor",
+            "should"
+          ]
+        },
+        {
+          "email_id": "syn-0165",
+          "anchors_found": [
+            "any"
+          ]
+        },
+        {
+          "email_id": "syn-0169",
+          "anchors_found": [
+            "week"
+          ]
+        },
+        {
+          "email_id": "syn-0170",
+          "anchors_found": [
+            "let"
+          ]
+        },
+        {
+          "email_id": "syn-0201",
+          "anchors_found": [
+            "let"
+          ]
+        }
+      ]
+    },
+    "p3_syn": {
+      "n_scored": 59,
+      "n_without_draft": 3,
+      "grounding_rate": 0.2712,
+      "in_window_rate": 0.1429,
+      "beyond_window_rate": 0.3111,
+      "examples": [
+        {
+          "email_id": "syn-0063",
+          "anchors_found": [
+            "given"
+          ]
+        },
+        {
+          "email_id": "syn-0100",
+          "anchors_found": [
+            "okafor"
+          ]
+        },
+        {
+          "email_id": "syn-0165",
+          "anchors_found": [
+            "any"
+          ]
+        },
+        {
+          "email_id": "syn-0169",
+          "anchors_found": [
+            "week"
+          ]
+        },
+        {
+          "email_id": "syn-0211",
+          "anchors_found": [
+            "can",
+            "labs",
+            "meridian"
+          ]
+        }
+      ]
+    }
+  }
+}

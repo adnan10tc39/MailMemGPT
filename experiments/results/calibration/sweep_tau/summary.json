@@ -1,0 +1,1425 @@
+{
+  "sweep": "sweep_tau",
+  "param": "triage_tau",
+  "dataset": "experiments/data/synthetic_val_150.jsonl",
+  "seed": 13,
+  "created": "2026-09-01T05:33:48.982961+00:00",
+  "n_fallback_llm_calls": 150,
+  "per_email_sims": [
+    {
+      "email_id": "syn-0001",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.4062110967289564,
+        "NOTIFY": 0.41338067899840425,
+        "RESPOND": 0.36754119899591364
+      }
+    },
+    {
+      "email_id": "syn-0002",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.3380991616097543,
+        "NOTIFY": 0.32467451351793597,
+        "RESPOND": 0.5452750715760302
+      }
+    },
+    {
+      "email_id": "syn-0003",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.4951398358620007,
+        "NOTIFY": 0.40623998640673387,
+        "RESPOND": 0.37806260220173105
+      }
+    },
+    {
+      "email_id": "syn-0004",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.6008275262554033,
+        "NOTIFY": 0.4085774015845962,
+        "RESPOND": 0.3629725417314058
+      }
+    },
+    {
+      "email_id": "syn-0005",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.37669929572873917,
+        "NOTIFY": 0.3724590160732745,
+        "RESPOND": 0.497500120864776
+      }
+    },
+    {
+      "email_id": "syn-0006",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.34444714368215257,
+        "NOTIFY": 0.3789140299177143,
+        "RESPOND": 0.4416596081613966
+      }
+    },
+    {
+      "email_id": "syn-0007",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.4574979797709615,
+        "NOTIFY": 0.5122283715321119,
+        "RESPOND": 0.32321275320906295
+      }
+    },
+    {
+      "email_id": "syn-0008",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.3518617159158819,
+        "NOTIFY": 0.4088927161220386,
+        "RESPOND": 0.520375770909594
+      }
+    },
+    {
+      "email_id": "syn-0009",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.35344159176677126,
+        "NOTIFY": 0.3644509762519972,
+        "RESPOND": 0.620757126638822
+      }
+    },
+    {
+      "email_id": "syn-0010",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.3737293271654549,
+        "NOTIFY": 0.3133386469065771,
+        "RESPOND": 0.36154121048324406
+      }
+    },
+    {
+      "email_id": "syn-0011",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.33345722405630385,
+        "NOTIFY": 0.44382341852682194,
+        "RESPOND": 0.2832813445663702
+      }
+    },
+    {
+      "email_id": "syn-0012",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.6299982194615212,
+        "NOTIFY": 0.39578787454684516,
+        "RESPOND": 0.36325964408389266
+      }
+    },
+    {
+      "email_id": "syn-0013",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.48831000417531256,
+        "NOTIFY": 0.3282583631730356,
+        "RESPOND": 0.26795905714723955
+      }
+    },
+    {
+      "email_id": "syn-0014",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.4883323683993641,
+        "NOTIFY": 0.36029143573579814,
+        "RESPOND": 0.37869087016866976
+      }
+    },
+    {
+      "email_id": "syn-0015",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.2880326495210188,
+        "NOTIFY": 0.34585519888733995,
+        "RESPOND": 0.5877630666797998
+      }
+    },
+    {
+      "email_id": "syn-0016",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.3048992617269316,
+        "NOTIFY": 0.3191372667690703,
+        "RESPOND": 0.6255346927844831
+      }
+    },
+    {
+      "email_id": "syn-0017",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.4762628542316031,
+        "NOTIFY": 0.4529862009325373,
+        "RESPOND": 0.27966816291775043
+      }
+    },
+    {
+      "email_id": "syn-0018",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.6866624645860523,
+        "NOTIFY": 0.4170528878298645,
+        "RESPOND": 0.3633275927932862
+      }
+    },
+    {
+      "email_id": "syn-0019",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.5941944704282869,
+        "NOTIFY": 0.42035839593901225,
+        "RESPOND": 0.3761700997158699
+      }
+    },
+    {
+      "email_id": "syn-0020",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.5114352304644664,
+        "NOTIFY": 0.38074331542794193,
+        "RESPOND": 0.3318607730107066
+      }
+    },
+    {
+      "email_id": "syn-0021",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.37297301668736227,
+        "NOTIFY": 0.42408853636607957,
+        "RESPOND": 0.3680576670434137
+      }
+    },
+    {
+      "email_id": "syn-0022",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.47190318290820477,
+        "NOTIFY": 0.31338810954737295,
+        "RESPOND": 0.2500567850151557
+      }
+    },
+    {
+      "email_id": "syn-0023",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.39818190643138607,
+        "NOTIFY": 0.3882378007708067,
+        "RESPOND": 0.2585297791353287
+      }
+    },
+    {
+      "email_id": "syn-0024",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.4351825126388529,
+        "NOTIFY": 0.4174641348698398,
+        "RESPOND": 0.27669549946808614
+      }
+    },
+    {
+      "email_id": "syn-0025",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.38668598893933215,
+        "NOTIFY": 0.43139917144434825,
+        "RESPOND": 0.36875401296706745
+      }
+    },
+    {
+      "email_id": "syn-0026",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.3947237229296455,
+        "NOTIFY": 0.3806428695993447,
+        "RESPOND": 0.674821464638063
+      }
+    },
+    {
+      "email_id": "syn-0027",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.48624106729367833,
+        "NOTIFY": 0.2709492421337065,
+        "RESPOND": 0.2120806860019715
+      }
+    },
+    {
+      "email_id": "syn-0028",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.35715872090387857,
+        "NOTIFY": 0.34108514462732864,
+        "RESPOND": 0.590771507532352
+      }
+    },
+    {
+      "email_id": "syn-0029",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.3863014353229228,
+        "NOTIFY": 0.35038130738943574,
+        "RESPOND": 0.30157080209222364
+      }
+    },
+    {
+      "email_id": "syn-0030",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.3515812979762566,
+        "NOTIFY": 0.315676781310553,
+        "RESPOND": 0.30289934586294276
+      }
+    },
+    {
+      "email_id": "syn-0031",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.5257872798886974,
+        "NOTIFY": 0.3822206832097951,
+        "RESPOND": 0.3755823519287578
+      }
+    },
+    {
+      "email_id": "syn-0032",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.5273000917449664,
+        "NOTIFY": 0.3048597112470275,
+        "RESPOND": 0.2901369734785866
+      }
+    },
+    {
+      "email_id": "syn-0033",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.3370352530710068,
+        "NOTIFY": 0.34878642226540735,
+        "RESPOND": 0.5569514616392609
+      }
+    },
+    {
+      "email_id": "syn-0034",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.31705376737872937,
+        "NOTIFY": 0.2793070803240516,
+        "RESPOND": 0.3519632368299269
+      }
+    },
+    {
+      "email_id": "syn-0035",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.5232473101908908,
+        "NOTIFY": 0.36355229302299474,
+        "RESPOND": 0.3293872836583953
+      }
+    },
+    {
+      "email_id": "syn-0036",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.3070259505292414,
+        "NOTIFY": 0.3091568182843434,
+        "RESPOND": 0.47166646045621385
+      }
+    },
+    {
+      "email_id": "syn-0037",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.4410275780556744,
+        "NOTIFY": 0.6128538988379977,
+        "RESPOND": 0.31495985540966664
+      }
+    },
+    {
+      "email_id": "syn-0038",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.7077890591320992,
+        "NOTIFY": 0.40820408174320033,
+        "RESPOND": 0.33645680536748823
+      }
+    },
+    {
+      "email_id": "syn-0039",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.44347125266561704,
+        "NOTIFY": 0.5813306984775573,
+        "RESPOND": 0.3005675076507799
+      }
+    },
+    {
+      "email_id": "syn-0040",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.4530943744604128,
+        "NOTIFY": 0.33619191020723727,
+        "RESPOND": 0.39990753284206415
+      }
+    },
+    {
+      "email_id": "syn-0041",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.4522651577969623,
+        "NOTIFY": 0.499601408123155,
+        "RESPOND": 0.3432009911660505
+      }
+    },
+    {
+      "email_id": "syn-0042",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.35806369145344297,
+        "NOTIFY": 0.399405603564712,
+        "RESPOND": 0.37546586627050216
+      }
+    },
+    {
+      "email_id": "syn-0043",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.3786922887377393,
+        "NOTIFY": 0.4356324826797473,
+        "RESPOND": 0.3234231880705659
+      }
+    },
+    {
+      "email_id": "syn-0044",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.3405183368070097,
+        "NOTIFY": 0.3845480347690864,
+        "RESPOND": 0.614395239596153
+      }
+    },
+    {
+      "email_id": "syn-0045",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.3963256557798045,
+        "NOTIFY": 0.3221408554897105,
+        "RESPOND": 0.43232446270726155
+      }
+    },
+    {
+      "email_id": "syn-0046",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.45983919461953293,
+        "NOTIFY": 0.5146197177106281,
+        "RESPOND": 0.3043644181574503
+      }
+    },
+    {
+      "email_id": "syn-0047",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.7411999765091529,
+        "NOTIFY": 0.3919695916437945,
+        "RESPOND": 0.3453489844042883
+      }
+    },
+    {
+      "email_id": "syn-0048",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.47094266614728264,
+        "NOTIFY": 0.633536796395062,
+        "RESPOND": 0.3385654625258153
+      }
+    },
+    {
+      "email_id": "syn-0049",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.31047330688547503,
+        "NOTIFY": 0.38463609007936306,
+        "RESPOND": 0.586565899923653
+      }
+    },
+    {
+      "email_id": "syn-0050",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.4361247302183413,
+        "NOTIFY": 0.4009607418032084,
+        "RESPOND": 0.39020420292389635
+      }
+    },
+    {
+      "email_id": "syn-0051",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.4426175919582982,
+        "NOTIFY": 0.600852688634284,
+        "RESPOND": 0.2792176081100879
+      }
+    },
+    {
+      "email_id": "syn-0052",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.3140669283378683,
+        "NOTIFY": 0.345703093443708,
+        "RESPOND": 0.48502514574523126
+      }
+    },
+    {
+      "email_id": "syn-0053",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.6696496652026026,
+        "NOTIFY": 0.4368276209720954,
+        "RESPOND": 0.3712031023322948
+      }
+    },
+    {
+      "email_id": "syn-0054",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.2844159786305843,
+        "NOTIFY": 0.2952939820585173,
+        "RESPOND": 0.5203394615955421
+      }
+    },
+    {
+      "email_id": "syn-0055",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.28932331733385386,
+        "NOTIFY": 0.3199923635592663,
+        "RESPOND": 0.5087040556505776
+      }
+    },
+    {
+      "email_id": "syn-0056",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.4382494744132224,
+        "NOTIFY": 0.5229716995154228,
+        "RESPOND": 0.28461519852906014
+      }
+    },
+    {
+      "email_id": "syn-0057",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.46188990013231246,
+        "NOTIFY": 0.3305978950325227,
+        "RESPOND": 0.27620195289318905
+      }
+    },
+    {
+      "email_id": "syn-0058",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.38684131999590265,
+        "NOTIFY": 0.3915368237630066,
+        "RESPOND": 0.5355361159854378
+      }
+    },
+    {
+      "email_id": "syn-0059",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.4885797831420504,
+        "NOTIFY": 0.3734576031179224,
+        "RESPOND": 0.3720637741912136
+      }
+    },
+    {
+      "email_id": "syn-0060",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.450495211997051,
+        "NOTIFY": 0.532749276018067,
+        "RESPOND": 0.284240710463999
+      }
+    },
+    {
+      "email_id": "syn-0061",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.27296832513680946,
+        "NOTIFY": 0.29575917996136236,
+        "RESPOND": 0.4909403638830163
+      }
+    },
+    {
+      "email_id": "syn-0062",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.35582019439194856,
+        "NOTIFY": 0.3794850037271331,
+        "RESPOND": 0.5516895801671191
+      }
+    },
+    {
+      "email_id": "syn-0063",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.4584569038456503,
+        "NOTIFY": 0.40058577041389754,
+        "RESPOND": 0.37270812371344864
+      }
+    },
+    {
+      "email_id": "syn-0064",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.34337079524971625,
+        "NOTIFY": 0.3899179622332021,
+        "RESPOND": 0.40556661052878895
+      }
+    },
+    {
+      "email_id": "syn-0065",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.3239605855136145,
+        "NOTIFY": 0.3809748723986872,
+        "RESPOND": 0.5270866290687023
+      }
+    },
+    {
+      "email_id": "syn-0066",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.5885882259538576,
+        "NOTIFY": 0.38156849402672466,
+        "RESPOND": 0.3460962947804507
+      }
+    },
+    {
+      "email_id": "syn-0067",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.37668691909276186,
+        "NOTIFY": 0.3820556294094408,
+        "RESPOND": 0.671770652199606
+      }
+    },
+    {
+      "email_id": "syn-0068",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.4443689659807988,
+        "NOTIFY": 0.4069358609402498,
+        "RESPOND": 0.3581163230747195
+      }
+    },
+    {
+      "email_id": "syn-0069",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.6361667260139335,
+        "NOTIFY": 0.3410858425855351,
+        "RESPOND": 0.3268007269664006
+      }
+    },
+    {
+      "email_id": "syn-0070",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.3640049794979554,
+        "NOTIFY": 0.43463808106077717,
+        "RESPOND": 0.3254482389105716
+      }
+    },
+    {
+      "email_id": "syn-0071",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.4554680106275324,
+        "NOTIFY": 0.3048614885688784,
+        "RESPOND": 0.2635777897678737
+      }
+    },
+    {
+      "email_id": "syn-0072",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.4300454132858196,
+        "NOTIFY": 0.6054147443613203,
+        "RESPOND": 0.3645366911301544
+      }
+    },
+    {
+      "email_id": "syn-0073",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.41778714746362833,
+        "NOTIFY": 0.3733309054212671,
+        "RESPOND": 0.34590344744736146
+      }
+    },
+    {
+      "email_id": "syn-0074",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.5687680315292444,
+        "NOTIFY": 0.37769852531570003,
+        "RESPOND": 0.31119201875824065
+      }
+    },
+    {
+      "email_id": "syn-0075",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.31883684076525853,
+        "NOTIFY": 0.36561515613261386,
+        "RESPOND": 0.4778346110505237
+      }
+    },
+    {
+      "email_id": "syn-0076",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.47457169828217616,
+        "NOTIFY": 0.383630017156678,
+        "RESPOND": 0.38200160136779804
+      }
+    },
+    {
+      "email_id": "syn-0077",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.36738056812331443,
+        "NOTIFY": 0.35834365908006205,
+        "RESPOND": 0.4094961859505698
+      }
+    },
+    {
+      "email_id": "syn-0078",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.6599543457230937,
+        "NOTIFY": 0.4223622420127159,
+        "RESPOND": 0.4946802206735933
+      }
+    },
+    {
+      "email_id": "syn-0079",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.3930419629094609,
+        "NOTIFY": 0.4175624723822897,
+        "RESPOND": 0.39151911268728323
+      }
+    },
+    {
+      "email_id": "syn-0080",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.31476408719737947,
+        "NOTIFY": 0.3453801036469617,
+        "RESPOND": 0.47638627133816136
+      }
+    },
+    {
+      "email_id": "syn-0081",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.4254374453541935,
+        "NOTIFY": 0.421657642352814,
+        "RESPOND": 0.4129269928817738
+      }
+    },
+    {
+      "email_id": "syn-0082",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.4016990017454747,
+        "NOTIFY": 0.384274332454835,
+        "RESPOND": 0.37497507530008956
+      }
+    },
+    {
+      "email_id": "syn-0083",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.5455082869949647,
+        "NOTIFY": 0.3180225688789652,
+        "RESPOND": 0.32439504048775225
+      }
+    },
+    {
+      "email_id": "syn-0084",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.5139055474455894,
+        "NOTIFY": 0.32932636341692867,
+        "RESPOND": 0.36223446625351663
+      }
+    },
+    {
+      "email_id": "syn-0085",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.3709479713450501,
+        "NOTIFY": 0.38726740891513245,
+        "RESPOND": 0.5626104513939109
+      }
+    },
+    {
+      "email_id": "syn-0086",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.40328744302334885,
+        "NOTIFY": 0.425310343304091,
+        "RESPOND": 0.3074768181516412
+      }
+    },
+    {
+      "email_id": "syn-0087",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.5321578989899396,
+        "NOTIFY": 0.39667108573688736,
+        "RESPOND": 0.3855697098532699
+      }
+    },
+    {
+      "email_id": "syn-0088",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.37885840160296347,
+        "NOTIFY": 0.40598929665540395,
+        "RESPOND": 0.28161261036178087
+      }
+    },
+    {
+      "email_id": "syn-0089",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.608141152127397,
+        "NOTIFY": 0.40149911351751566,
+        "RESPOND": 0.35799239020584395
+      }
+    },
+    {
+      "email_id": "syn-0090",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.3437762602387734,
+        "NOTIFY": 0.4542277247016375,
+        "RESPOND": 0.45026333273123353
+      }
+    },
+    {
+      "email_id": "syn-0091",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.3462833222418127,
+        "NOTIFY": 0.3518769001470339,
+        "RESPOND": 0.6140271826411341
+      }
+    },
+    {
+      "email_id": "syn-0092",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.28623972495539085,
+        "NOTIFY": 0.35992689738252914,
+        "RESPOND": 0.5146129335936409
+      }
+    },
+    {
+      "email_id": "syn-0093",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.49388633563189277,
+        "NOTIFY": 0.5705565402963132,
+        "RESPOND": 0.3156872207414694
+      }
+    },
+    {
+      "email_id": "syn-0094",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.3087594716976345,
+        "NOTIFY": 0.32901429953952854,
+        "RESPOND": 0.4903269951985175
+      }
+    },
+    {
+      "email_id": "syn-0095",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.31023681897031863,
+        "NOTIFY": 0.36436058420817985,
+        "RESPOND": 0.5905003539219084
+      }
+    },
+    {
+      "email_id": "syn-0096",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.3792876066911649,
+        "NOTIFY": 0.33513092496364894,
+        "RESPOND": 0.3316239650819739
+      }
+    },
+    {
+      "email_id": "syn-0097",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.5288984313395338,
+        "NOTIFY": 0.30629261157394083,
+        "RESPOND": 0.307232370726534
+      }
+    },
+    {
+      "email_id": "syn-0098",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.36201086641344515,
+        "NOTIFY": 0.43705128794700543,
+        "RESPOND": 0.3671253964359482
+      }
+    },
+    {
+      "email_id": "syn-0099",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.5017804547544182,
+        "NOTIFY": 0.49754373254508033,
+        "RESPOND": 0.32592852046988563
+      }
+    },
+    {
+      "email_id": "syn-0100",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.3493771517062163,
+        "NOTIFY": 0.327822902854902,
+        "RESPOND": 0.2895396780421111
+      }
+    },
+    {
+      "email_id": "syn-0101",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.3226350443554826,
+        "NOTIFY": 0.291587612045896,
+        "RESPOND": 0.4260055480506355
+      }
+    },
+    {
+      "email_id": "syn-0102",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.5922034871369075,
+        "NOTIFY": 0.37292942244972305,
+        "RESPOND": 0.3453277818294759
+      }
+    },
+    {
+      "email_id": "syn-0103",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.5139389879240625,
+        "NOTIFY": 0.43017920978570423,
+        "RESPOND": 0.33808664094296437
+      }
+    },
+    {
+      "email_id": "syn-0104",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.3812521815734531,
+        "NOTIFY": 0.4439782238586907,
+        "RESPOND": 0.45819460081974794
+      }
+    },
+    {
+      "email_id": "syn-0105",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.416184446214551,
+        "NOTIFY": 0.5670889688339593,
+        "RESPOND": 0.2841875043348716
+      }
+    },
+    {
+      "email_id": "syn-0106",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.4193730941237255,
+        "NOTIFY": 0.3085294980405755,
+        "RESPOND": 0.42716455294067535
+      }
+    },
+    {
+      "email_id": "syn-0107",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.4999128350423996,
+        "NOTIFY": 0.35902383844811814,
+        "RESPOND": 0.33863343544702507
+      }
+    },
+    {
+      "email_id": "syn-0108",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.3763805175420095,
+        "NOTIFY": 0.35417427482816266,
+        "RESPOND": 0.4926995235687439
+      }
+    },
+    {
+      "email_id": "syn-0109",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.5372996636807249,
+        "NOTIFY": 0.3136847682818651,
+        "RESPOND": 0.2903322278691225
+      }
+    },
+    {
+      "email_id": "syn-0110",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.6223614098769615,
+        "NOTIFY": 0.3945229872934093,
+        "RESPOND": 0.34867105412512234
+      }
+    },
+    {
+      "email_id": "syn-0111",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.35196184805619657,
+        "NOTIFY": 0.42797990503085614,
+        "RESPOND": 0.4907648605974284
+      }
+    },
+    {
+      "email_id": "syn-0112",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.6212095066888886,
+        "NOTIFY": 0.3275149480350532,
+        "RESPOND": 0.31578110538340354
+      }
+    },
+    {
+      "email_id": "syn-0113",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.43404806238330784,
+        "NOTIFY": 0.5051257153956938,
+        "RESPOND": 0.3077002427436454
+      }
+    },
+    {
+      "email_id": "syn-0114",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.46105355548817306,
+        "NOTIFY": 0.32840235112221816,
+        "RESPOND": 0.2909062867317369
+      }
+    },
+    {
+      "email_id": "syn-0115",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.5664833985121319,
+        "NOTIFY": 0.34173130143602504,
+        "RESPOND": 0.31576666218559046
+      }
+    },
+    {
+      "email_id": "syn-0116",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.4539537734325356,
+        "NOTIFY": 0.3106536395605436,
+        "RESPOND": 0.29809714399513476
+      }
+    },
+    {
+      "email_id": "syn-0117",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.5684093897844147,
+        "NOTIFY": 0.40489138692999815,
+        "RESPOND": 0.37314692451714715
+      }
+    },
+    {
+      "email_id": "syn-0118",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.5873179556082386,
+        "NOTIFY": 0.3148099397530696,
+        "RESPOND": 0.3252428633336433
+      }
+    },
+    {
+      "email_id": "syn-0119",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.560341957595543,
+        "NOTIFY": 0.36633015181609885,
+        "RESPOND": 0.33557674905891066
+      }
+    },
+    {
+      "email_id": "syn-0120",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.5114897913155262,
+        "NOTIFY": 0.5271892035501392,
+        "RESPOND": 0.29304348989538664
+      }
+    },
+    {
+      "email_id": "syn-0121",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.2900777462143328,
+        "NOTIFY": 0.2798650030022446,
+        "RESPOND": 0.43600504764596204
+      }
+    },
+    {
+      "email_id": "syn-0122",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.37724532539932565,
+        "NOTIFY": 0.3647362404270049,
+        "RESPOND": 0.25828615214667905
+      }
+    },
+    {
+      "email_id": "syn-0123",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.5351321519623233,
+        "NOTIFY": 0.3061999363310903,
+        "RESPOND": 0.33832616019633477
+      }
+    },
+    {
+      "email_id": "syn-0124",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.3836568657773216,
+        "NOTIFY": 0.3719209809330939,
+        "RESPOND": 0.2513222883528814
+      }
+    },
+    {
+      "email_id": "syn-0125",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.36653519360864606,
+        "NOTIFY": 0.3991866515202084,
+        "RESPOND": 0.2790367131219694
+      }
+    },
+    {
+      "email_id": "syn-0126",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.6812806267633721,
+        "NOTIFY": 0.41756854194887594,
+        "RESPOND": 0.37551355338824255
+      }
+    },
+    {
+      "email_id": "syn-0127",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.29486556343219883,
+        "NOTIFY": 0.3053847061017727,
+        "RESPOND": 0.3813831198865636
+      }
+    },
+    {
+      "email_id": "syn-0128",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.38342627213414193,
+        "NOTIFY": 0.3906342408727349,
+        "RESPOND": 0.47233142533590566
+      }
+    },
+    {
+      "email_id": "syn-0129",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.3318563749781156,
+        "NOTIFY": 0.3906693263630002,
+        "RESPOND": 0.5980486357610921
+      }
+    },
+    {
+      "email_id": "syn-0130",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.40521347837425903,
+        "NOTIFY": 0.3803604178450999,
+        "RESPOND": 0.3039603994796256
+      }
+    },
+    {
+      "email_id": "syn-0131",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.36354349077742043,
+        "NOTIFY": 0.314474600561927,
+        "RESPOND": 0.493921273214202
+      }
+    },
+    {
+      "email_id": "syn-0132",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.4432301696539144,
+        "NOTIFY": 0.3512909914092637,
+        "RESPOND": 0.4381824992990002
+      }
+    },
+    {
+      "email_id": "syn-0133",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.39572902452004954,
+        "NOTIFY": 0.38887748246498943,
+        "RESPOND": 0.3389199837568233
+      }
+    },
+    {
+      "email_id": "syn-0134",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.6311136702869666,
+        "NOTIFY": 0.4330188357957392,
+        "RESPOND": 0.46946859675802777
+      }
+    },
+    {
+      "email_id": "syn-0135",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.5794889183441947,
+        "NOTIFY": 0.3172296113510902,
+        "RESPOND": 0.4008476706978118
+      }
+    },
+    {
+      "email_id": "syn-0136",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.4591185000916346,
+        "NOTIFY": 0.3770668248543063,
+        "RESPOND": 0.3810848893586074
+      }
+    },
+    {
+      "email_id": "syn-0137",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.46533009331648834,
+        "NOTIFY": 0.5764392938662901,
+        "RESPOND": 0.323338150935242
+      }
+    },
+    {
+      "email_id": "syn-0138",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.4377518078644287,
+        "NOTIFY": 0.43846593892887553,
+        "RESPOND": 0.35622706475415433
+      }
+    },
+    {
+      "email_id": "syn-0139",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.3630386035451181,
+        "NOTIFY": 0.5224259773729936,
+        "RESPOND": 0.3282355032849391
+      }
+    },
+    {
+      "email_id": "syn-0140",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.49444818935425394,
+        "NOTIFY": 0.3410545990619823,
+        "RESPOND": 0.4325827317131872
+      }
+    },
+    {
+      "email_id": "syn-0141",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.5269028212868963,
+        "NOTIFY": 0.27457839841185605,
+        "RESPOND": 0.324671642977735
+      }
+    },
+    {
+      "email_id": "syn-0142",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.4463562232268625,
+        "NOTIFY": 0.5448206177910543,
+        "RESPOND": 0.30437411659099234
+      }
+    },
+    {
+      "email_id": "syn-0143",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.43410871500902015,
+        "NOTIFY": 0.6132321280562695,
+        "RESPOND": 0.33794003312047305
+      }
+    },
+    {
+      "email_id": "syn-0144",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.316721465428746,
+        "NOTIFY": 0.3799881181155156,
+        "RESPOND": 0.4209103841975992
+      }
+    },
+    {
+      "email_id": "syn-0145",
+      "label": "RESPOND",
+      "sims": {
+        "IGNORE": 0.348398218760243,
+        "NOTIFY": 0.3238829161899399,
+        "RESPOND": 0.45918651803288013
+      }
+    },
+    {
+      "email_id": "syn-0146",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.40751457967852667,
+        "NOTIFY": 0.38182921552866356,
+        "RESPOND": 0.3178935881217557
+      }
+    },
+    {
+      "email_id": "syn-0147",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.3809464907577156,
+        "NOTIFY": 0.5192576607168666,
+        "RESPOND": 0.359705918671259
+      }
+    },
+    {
+      "email_id": "syn-0148",
+      "label": "IGNORE",
+      "sims": {
+        "IGNORE": 0.5967567839544156,
+        "NOTIFY": 0.41905134077842376,
+        "RESPOND": 0.33223620876863313
+      }
+    },
+    {
+      "email_id": "syn-0149",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.45244729914342174,
+        "NOTIFY": 0.6010580768110567,
+        "RESPOND": 0.29593813888757303
+      }
+    },
+    {
+      "email_id": "syn-0150",
+      "label": "NOTIFY",
+      "sims": {
+        "IGNORE": 0.3749177052726328,
+        "NOTIFY": 0.45761698608116763,
+        "RESPOND": 0.3257693531644863
+      }
+    }
+  ],
+  "settings": [
+    {
+      "tau": 0.25,
+      "accuracy": 0.8066666666666666,
+      "macro_f1": 0.8058201058201058,
+      "n": 150,
+      "n_semantic": 150,
+      "n_fallback": 0,
+      "semantic_pct": 100.0
+    },
+    {
+      "tau": 0.3,
+      "accuracy": 0.8066666666666666,
+      "macro_f1": 0.8058201058201058,
+      "n": 150,
+      "n_semantic": 150,
+      "n_fallback": 0,
+      "semantic_pct": 100.0
+    },
+    {
+      "tau": 0.37,
+      "accuracy": 0.82,
+      "macro_f1": 0.819597497718115,
+      "n": 150,
+      "n_semantic": 147,
+      "n_fallback": 3,
+      "semantic_pct": 98.0
+    },
+    {
+      "tau": 0.45,
+      "accuracy": 0.9133333333333333,
+      "macro_f1": 0.9124384308920295,
+      "n": 150,
+      "n_semantic": 109,
+      "n_fallback": 41,
+      "semantic_pct": 72.66666666666667
+    },
+    {
+      "tau": 0.55,
+      "accuracy": 0.9533333333333334,
+      "macro_f1": 0.9496801148975061,
+      "n": 150,
+      "n_semantic": 47,
+      "n_fallback": 103,
+      "semantic_pct": 31.333333333333332
+    },
+    {
+      "tau": 0.65,
+      "accuracy": 0.9533333333333334,
+      "macro_f1": 0.9496801148975061,
+      "n": 150,
+      "n_semantic": 8,
+      "n_fallback": 142,
+      "semantic_pct": 5.333333333333333
+    },
+    {
+      "tau": 0.75,
+      "accuracy": 0.9533333333333334,
+      "macro_f1": 0.9496801148975061,
+      "n": 150,
+      "n_semantic": 0,
+      "n_fallback": 150,
+      "semantic_pct": 0.0
+    }
+  ]
+}

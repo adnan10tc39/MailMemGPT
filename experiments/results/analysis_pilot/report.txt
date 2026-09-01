@@ -1,0 +1,47 @@
+=== MailRecallAI metrics report ===
+
+Run pilot_p1: n_valid=20 errors=0
+  accuracy=0.5500 (Wilson 95% CI [0.3421, 0.7418]) macro-F1=0.5068
+  confusion (rows=true IGNORE,NOTIFY,RESPOND):
+    IGNORE   [1, 2, 5]
+    NOTIFY   [0, 4, 2]
+    RESPOND  [0, 0, 6]
+  IGNORE   P=1.000 R=0.125 F1=0.222 (n=8)
+  NOTIFY   P=0.667 R=0.667 F1=0.667 (n=6)
+  RESPOND  P=0.462 R=1.000 F1=0.632 (n=6)
+  triage: semantic 100.0% / LLM fallback 0.0%; tool calls total=0 mean=0.00
+  prompt tokens mean=1236 median=1154 p95=2635
+  budget util mean=19.7% over-B=0.0% under-0.5B=100.0%
+  dedup savings mean=0.0 total=0 tokens
+
+Run pilot_p2: n_valid=19 errors=1
+  accuracy=0.5263 (Wilson 95% CI [0.3171, 0.7267]) macro-F1=0.4924
+  confusion (rows=true IGNORE,NOTIFY,RESPOND):
+    IGNORE   [1, 2, 5]
+    NOTIFY   [0, 4, 2]
+    RESPOND  [0, 0, 5]
+  IGNORE   P=1.000 R=0.125 F1=0.222 (n=8)
+  NOTIFY   P=0.667 R=0.667 F1=0.667 (n=6)
+  RESPOND  P=0.417 R=1.000 F1=0.588 (n=5)
+  triage: semantic 100.0% / LLM fallback 0.0%; tool calls total=5 mean=0.26
+  prompt tokens mean=1963 median=1877 p95=5424
+  budget util mean=21.1% over-B=0.0% under-0.5B=100.0%
+  dedup savings mean=0.0 total=0 tokens
+
+Run pilot_p3: n_valid=20 errors=0
+  accuracy=0.5500 (Wilson 95% CI [0.3421, 0.7418]) macro-F1=0.5068
+  confusion (rows=true IGNORE,NOTIFY,RESPOND):
+    IGNORE   [1, 2, 5]
+    NOTIFY   [0, 4, 2]
+    RESPOND  [0, 0, 6]
+  IGNORE   P=1.000 R=0.125 F1=0.222 (n=8)
+  NOTIFY   P=0.667 R=0.667 F1=0.667 (n=6)
+  RESPOND  P=0.462 R=1.000 F1=0.632 (n=6)
+  triage: semantic 100.0% / LLM fallback 0.0%; tool calls total=6 mean=0.30
+  prompt tokens mean=1992 median=2192 p95=5057
+  budget util mean=21.7% over-B=0.0% under-0.5B=100.0%
+  dedup savings mean=196.0 total=2548 tokens
+
+pilot_p1_vs_pilot_p2: n_common=19 McNemar b=0 c=0 stat=- p=1.0000 (exact_binomial); bootstrap dAcc=+0.0000 [+0.0000, +0.0000]
+pilot_p1_vs_pilot_p3: n_common=20 McNemar b=0 c=0 stat=- p=1.0000 (exact_binomial); bootstrap dAcc=+0.0000 [+0.0000, +0.0000]
+pilot_p2_vs_pilot_p3: n_common=19 McNemar b=0 c=0 stat=- p=1.0000 (exact_binomial); bootstrap dAcc=+0.0000 [+0.0000, +0.0000]

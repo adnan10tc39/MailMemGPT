@@ -1,0 +1,16 @@
+\begin{tabular}{lrrr}
+\toprule
+Stage (ms, mean/med/p95) & pilot\_p1 & pilot\_p2 & pilot\_p3 \\
+\midrule
+triage\_embed & 30 / 30 / 38 & 33 / 31 / 49 & 32 / 32 / 44 \\
+triage\_query & 15 / 15 / 17 & 15 / 15 / 16 & 15 / 15 / 17 \\
+triage\_llm & 0 / 0 / 0 & 0 / 0 / 0 & 0 / 0 / 0 \\
+sql\_load & 8 / 8 / 11 & 7 / 7 / 11 & 8 / 8 / 12 \\
+retrieve & 0 / 0 / 0 & 0 / 0 / 0 & 33 / 36 / 39 \\
+dedup & 0 / 0 / 0 & 0 / 0 / 0 & 1 / 0 / 1 \\
+budget & 5 / 5 / 7 & 5 / 5 / 7 & 4 / 3 / 8 \\
+assemble & 9 / 9 / 13 & 9 / 10 / 12 & 6 / 6 / 11 \\
+respond\_llm & 1147 / 602 / 3265 & 1603 / 810 / 4920 & 1152 / 847 / 2629 \\
+total & 21432 / 741 / 60825 & 35095 / 1675 / 120040 & 36219 / 30363 / 120096 \\
+\bottomrule
+\end{tabular}

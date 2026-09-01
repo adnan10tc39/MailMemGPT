@@ -1,0 +1,129 @@
+{
+  "dataset": "experiments/data/synthetic_500.jsonl",
+  "window": 10,
+  "n_cases": 107,
+  "n_beyond_window": 93,
+  "runs": {
+    "p1_syn": {
+      "n_scored": 88,
+      "n_without_draft": 19,
+      "grounding_rate": 0.125,
+      "in_window_rate": 0.3077,
+      "beyond_window_rate": 0.0933,
+      "examples": [
+        {
+          "email_id": "syn-0043",
+          "anchors_found": [
+            "let"
+          ]
+        },
+        {
+          "email_id": "syn-0063",
+          "anchors_found": [
+            "anita",
+            "rao"
+          ]
+        },
+        {
+          "email_id": "syn-0122",
+          "anchors_found": [
+            "let"
+          ]
+        },
+        {
+          "email_id": "syn-0143",
+          "anchors_found": [
+            "appreciate"
+          ]
+        },
+        {
+          "email_id": "syn-0150",
+          "anchors_found": [
+            "regarding"
+          ]
+        }
+      ]
+    },
+    "p2_syn": {
+      "n_scored": 90,
+      "n_without_draft": 17,
+      "grounding_rate": 0.2444,
+      "in_window_rate": 0.2857,
+      "beyond_window_rate": 0.2368,
+      "examples": [
+        {
+          "email_id": "syn-0043",
+          "anchors_found": [
+            "let"
+          ]
+        },
+        {
+          "email_id": "syn-0063",
+          "anchors_found": [
+            "anita",
+            "rao"
+          ]
+        },
+        {
+          "email_id": "syn-0122",
+          "anchors_found": [
+            "let"
+          ]
+        },
+        {
+          "email_id": "syn-0143",
+          "anchors_found": [
+            "appreciate"
+          ]
+        },
+        {
+          "email_id": "syn-0150",
+          "anchors_found": [
+            "regarding"
+          ]
+        }
+      ]
+    },
+    "p3_syn": {
+      "n_scored": 77,
+      "n_without_draft": 30,
+      "grounding_rate": 0.2208,
+      "in_window_rate": 0.2308,
+      "beyond_window_rate": 0.2188,
+      "examples": [
+        {
+          "email_id": "syn-0037",
+          "anchors_found": [
+            "let"
+          ]
+        },
+        {
+          "email_id": "syn-0043",
+          "anchors_found": [
+            "let"
+          ]
+        },
+        {
+          "email_id": "syn-0063",
+          "anchors_found": [
+            "anita",
+            "rao"
+          ]
+        },
+        {
+          "email_id": "syn-0077",
+          "anchors_found": [
+            "sam",
+            "whitaker"
+          ]
+        },
+        {
+          "email_id": "syn-0093",
+          "anchors_found": [
+            "looking"
+          ]
+        }
+      ]
+    }
+  }
+}

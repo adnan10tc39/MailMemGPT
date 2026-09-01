@@ -1,0 +1,47 @@
+=== MailRecallAI metrics report ===
+
+Run p1_syn: n_valid=500 errors=0
+  accuracy=0.9200 (Wilson 95% CI [0.8929, 0.9407]) macro-F1=0.9173
+  confusion (rows=true IGNORE,NOTIFY,RESPOND):
+    IGNORE   [191, 4, 5]
+    NOTIFY   [12, 127, 11]
+    RESPOND  [4, 4, 142]
+  IGNORE   P=0.923 R=0.955 F1=0.939 (n=200)
+  NOTIFY   P=0.941 R=0.847 F1=0.891 (n=150)
+  RESPOND  P=0.899 R=0.947 F1=0.922 (n=150)
+  triage: semantic 25.8% / LLM fallback 74.2%; tool calls total=0 mean=0.00
+  prompt tokens mean=1809 median=1552 p95=3998
+  budget util mean=23.1% over-B=0.0% under-0.5B=100.0%
+  dedup savings mean=0.0 total=0 tokens
+
+Run p2_syn: n_valid=500 errors=0
+  accuracy=0.9160 (Wilson 95% CI [0.8884, 0.9373]) macro-F1=0.9135
+  confusion (rows=true IGNORE,NOTIFY,RESPOND):
+    IGNORE   [192, 2, 6]
+    NOTIFY   [16, 123, 11]
+    RESPOND  [5, 2, 143]
+  IGNORE   P=0.901 R=0.960 F1=0.930 (n=200)
+  NOTIFY   P=0.969 R=0.820 F1=0.888 (n=150)
+  RESPOND  P=0.894 R=0.953 F1=0.923 (n=150)
+  triage: semantic 25.8% / LLM fallback 74.2%; tool calls total=483 mean=0.97
+  prompt tokens mean=5165 median=3700 p95=14016
+  budget util mean=25.7% over-B=0.0% under-0.5B=100.0%
+  dedup savings mean=0.0 total=0 tokens
+
+Run p3_syn: n_valid=500 errors=0
+  accuracy=0.8940 (Wilson 95% CI [0.8639, 0.9180]) macro-F1=0.8887
+  confusion (rows=true IGNORE,NOTIFY,RESPOND):
+    IGNORE   [194, 2, 4]
+    NOTIFY   [11, 130, 9]
+    RESPOND  [12, 15, 123]
+  IGNORE   P=0.894 R=0.970 F1=0.930 (n=200)
+  NOTIFY   P=0.884 R=0.867 F1=0.875 (n=150)
+  RESPOND  P=0.904 R=0.820 F1=0.860 (n=150)
+  triage: semantic 25.8% / LLM fallback 74.2%; tool calls total=179 mean=0.36
+  prompt tokens mean=4428 median=1602 p95=14693
+  budget util mean=35.6% over-B=0.0% under-0.5B=100.0%
+  dedup savings mean=77.6 total=10552 tokens
+
+p1_syn_vs_p2_syn: n_common=500 McNemar b=13 c=11 stat=11.000 p=0.8388 (exact_binomial); bootstrap dAcc=+0.0040 [-0.0160, +0.0240]
+p1_syn_vs_p3_syn: n_common=500 McNemar b=23 c=10 stat=4.364 p=0.0367 (chi2_cc); bootstrap dAcc=+0.0260 [+0.0040, +0.0480]
+p2_syn_vs_p3_syn: n_common=500 McNemar b=25 c=14 stat=2.564 p=0.1093 (chi2_cc); bootstrap dAcc=+0.0220 [-0.0020, +0.0460]

@@ -1,0 +1,101 @@
+=== MailRecallAI metrics report ===
+
+Run p1_syn: n_valid=500 errors=0
+  accuracy=0.9200 (Wilson 95% CI [0.8929, 0.9407]) macro-F1=0.9173
+  confusion (rows=true IGNORE,NOTIFY,RESPOND):
+    IGNORE   [191, 4, 5]
+    NOTIFY   [12, 127, 11]
+    RESPOND  [4, 4, 142]
+  IGNORE   P=0.923 R=0.955 F1=0.939 (n=200)
+  NOTIFY   P=0.941 R=0.847 F1=0.891 (n=150)
+  RESPOND  P=0.899 R=0.947 F1=0.922 (n=150)
+  triage: semantic 25.8% / LLM fallback 74.2%; tool calls total=0 mean=0.00
+  prompt tokens mean=1809 median=1552 p95=3998
+  budget util mean=23.1% over-B=0.0% under-0.5B=100.0%
+  dedup savings mean=0.0 total=0 tokens
+
+Run abl_no_dedup: n_valid=500 errors=0
+  accuracy=0.9160 (Wilson 95% CI [0.8884, 0.9373]) macro-F1=0.9111
+  confusion (rows=true IGNORE,NOTIFY,RESPOND):
+    IGNORE   [197, 1, 2]
+    NOTIFY   [9, 131, 10]
+    RESPOND  [8, 12, 130]
+  IGNORE   P=0.921 R=0.985 F1=0.952 (n=200)
+  NOTIFY   P=0.910 R=0.873 F1=0.891 (n=150)
+  RESPOND  P=0.915 R=0.867 F1=0.890 (n=150)
+  triage: semantic 25.8% / LLM fallback 74.2%; tool calls total=0 mean=0.00
+  prompt tokens mean=1239 median=1356 p95=2315
+  budget util mean=31.0% over-B=0.0% under-0.5B=100.0%
+  dedup savings mean=0.0 total=0 tokens
+
+Run abl_no_budget: n_valid=500 errors=0
+  accuracy=0.9240 (Wilson 95% CI [0.8974, 0.9441]) macro-F1=0.9198
+  confusion (rows=true IGNORE,NOTIFY,RESPOND):
+    IGNORE   [196, 2, 2]
+    NOTIFY   [7, 133, 10]
+    RESPOND  [7, 10, 133]
+  IGNORE   P=0.933 R=0.980 F1=0.956 (n=200)
+  NOTIFY   P=0.917 R=0.887 F1=0.902 (n=150)
+  RESPOND  P=0.917 R=0.887 F1=0.902 (n=150)
+  triage: semantic 25.8% / LLM fallback 74.2%; tool calls total=0 mean=0.00
+  prompt tokens mean=1239 median=1356 p95=2323
+  budget util mean=29.7% over-B=0.0% under-0.5B=100.0%
+  dedup savings mean=52.8 total=7656 tokens
+
+Run abl_vector_only: n_valid=500 errors=0
+  accuracy=0.9060 (Wilson 95% CI [0.8772, 0.9286]) macro-F1=0.8992
+  confusion (rows=true IGNORE,NOTIFY,RESPOND):
+    IGNORE   [194, 4, 2]
+    NOTIFY   [4, 140, 6]
+    RESPOND  [7, 24, 119]
+  IGNORE   P=0.946 R=0.970 F1=0.958 (n=200)
+  NOTIFY   P=0.833 R=0.933 F1=0.881 (n=150)
+  RESPOND  P=0.937 R=0.793 F1=0.859 (n=150)
+  triage: semantic 25.8% / LLM fallback 74.2%; tool calls total=0 mean=0.00
+  prompt tokens mean=534 median=405 p95=1314
+  budget util mean=13.6% over-B=0.0% under-0.5B=100.0%
+  dedup savings mean=0.0 total=0 tokens
+
+Run abl_naive_rag: n_valid=500 errors=0
+  accuracy=0.9160 (Wilson 95% CI [0.8884, 0.9373]) macro-F1=0.9113
+  confusion (rows=true IGNORE,NOTIFY,RESPOND):
+    IGNORE   [196, 2, 2]
+    NOTIFY   [8, 132, 10]
+    RESPOND  [8, 12, 130]
+  IGNORE   P=0.925 R=0.980 F1=0.951 (n=200)
+  NOTIFY   P=0.904 R=0.880 F1=0.892 (n=150)
+  RESPOND  P=0.915 R=0.867 F1=0.890 (n=150)
+  triage: semantic 25.8% / LLM fallback 74.2%; tool calls total=0 mean=0.00
+  prompt tokens mean=1237 median=1356 p95=2305
+  budget util mean=10.4% over-B=0.0% under-0.5B=100.0%
+  dedup savings mean=0.0 total=0 tokens
+
+Run abl_summary_only: n_valid=500 errors=0
+  accuracy=0.9080 (Wilson 95% CI [0.8795, 0.9303]) macro-F1=0.9008
+  confusion (rows=true IGNORE,NOTIFY,RESPOND):
+    IGNORE   [196, 2, 2]
+    NOTIFY   [5, 139, 6]
+    RESPOND  [7, 24, 119]
+  IGNORE   P=0.942 R=0.980 F1=0.961 (n=200)
+  NOTIFY   P=0.842 R=0.927 F1=0.883 (n=150)
+  RESPOND  P=0.937 R=0.793 F1=0.859 (n=150)
+  triage: semantic 25.8% / LLM fallback 74.2%; tool calls total=0 mean=0.00
+  prompt tokens mean=534 median=405 p95=1314
+  budget util mean=9.7% over-B=0.0% under-0.5B=100.0%
+  dedup savings mean=0.0 total=0 tokens
+
+p1_syn_vs_abl_no_dedup: n_common=500 McNemar b=14 c=12 stat=0.038 p=0.8445 (chi2_cc); bootstrap dAcc=+0.0040 [-0.0160, +0.0240]
+p1_syn_vs_abl_no_budget: n_common=500 McNemar b=10 c=12 stat=10.000 p=0.8318 (exact_binomial); bootstrap dAcc=-0.0040 [-0.0220, +0.0140]
+p1_syn_vs_abl_vector_only: n_common=500 McNemar b=26 c=19 stat=0.800 p=0.3711 (chi2_cc); bootstrap dAcc=+0.0140 [-0.0120, +0.0400]
+p1_syn_vs_abl_naive_rag: n_common=500 McNemar b=14 c=12 stat=0.038 p=0.8445 (chi2_cc); bootstrap dAcc=+0.0040 [-0.0160, +0.0240]
+p1_syn_vs_abl_summary_only: n_common=500 McNemar b=26 c=20 stat=0.543 p=0.4610 (chi2_cc); bootstrap dAcc=+0.0120 [-0.0140, +0.0380]
+abl_no_dedup_vs_abl_no_budget: n_common=500 McNemar b=1 c=5 stat=1.000 p=0.2188 (exact_binomial); bootstrap dAcc=-0.0080 [-0.0180, +0.0000]
+abl_no_dedup_vs_abl_vector_only: n_common=500 McNemar b=18 c=13 stat=0.516 p=0.4725 (chi2_cc); bootstrap dAcc=+0.0100 [-0.0120, +0.0320]
+abl_no_dedup_vs_abl_naive_rag: n_common=500 McNemar b=2 c=2 stat=2.000 p=1.0000 (exact_binomial); bootstrap dAcc=+0.0000 [-0.0080, +0.0080]
+abl_no_dedup_vs_abl_summary_only: n_common=500 McNemar b=17 c=13 stat=0.300 p=0.5839 (chi2_cc); bootstrap dAcc=+0.0080 [-0.0140, +0.0300]
+abl_no_budget_vs_abl_vector_only: n_common=500 McNemar b=19 c=10 stat=2.207 p=0.1374 (chi2_cc); bootstrap dAcc=+0.0180 [-0.0020, +0.0380]
+abl_no_budget_vs_abl_naive_rag: n_common=500 McNemar b=6 c=2 stat=2.000 p=0.2891 (exact_binomial); bootstrap dAcc=+0.0080 [-0.0020, +0.0200]
+abl_no_budget_vs_abl_summary_only: n_common=500 McNemar b=19 c=11 stat=1.633 p=0.2012 (chi2_cc); bootstrap dAcc=+0.0160 [-0.0060, +0.0380]
+abl_vector_only_vs_abl_naive_rag: n_common=500 McNemar b=13 c=18 stat=0.516 p=0.4725 (chi2_cc); bootstrap dAcc=-0.0100 [-0.0320, +0.0120]
+abl_vector_only_vs_abl_summary_only: n_common=500 McNemar b=1 c=2 stat=1.000 p=1.0000 (exact_binomial); bootstrap dAcc=-0.0020 [-0.0100, +0.0040]
+abl_naive_rag_vs_abl_summary_only: n_common=500 McNemar b=17 c=13 stat=0.300 p=0.5839 (chi2_cc); bootstrap dAcc=+0.0080 [-0.0140, +0.0300]

@@ -1,0 +1,43 @@
+{
+  "config": {
+    "phase": "p3",
+    "run_id": "dryrun",
+    "dataset_path": "/media/adnan/DATA/Agentic-LongTerm-Memory/experiments/data/dryrun_fixture_8.jsonl",
+    "triage_tau": 0.37,
+    "triage_topn": 3,
+    "retrieval_k": 5,
+    "retrieval_delta": 0.55,
+    "prompt_budget": 1500,
+    "history_window": 3,
+    "chat_model": "gpt-4o-mini",
+    "summary_model": "gpt-4o-mini",
+    "embed_model": "text-embedding-3-small",
+    "provider": "openai",
+    "embed_dim": 1536,
+    "embed_device": "cuda",
+    "temperature": 0.0,
+    "max_output_tokens": 2000,
+    "seed": 13,
+    "generate_responses": true,
+    "enable_dedup": true,
+    "enable_budget": true,
+    "enable_sql_history": true,
+    "enable_vector_retrieval": true,
+    "naive_rag": false
+  },
+  "namespace": "dryrun",
+  "git_hash": "1b8707b3b27a22b0e78e83e21c05400ca0101024",
+  "started": "2026-08-31T15:38:10.433450+00:00",
+  "finished": "2026-08-31T15:38:10.643711+00:00",
+  "resumed": false,
+  "limit": null,
+  "usage_totals": {
+    "prompt_tokens": 7331,
+    "completion_tokens": 191,
+    "embed_tokens": 6757,
+    "cost_usd": 0.0
+  },
+  "n_processed": 8,
+  "n_skipped": 0,
+  "n_errors": 0
+}

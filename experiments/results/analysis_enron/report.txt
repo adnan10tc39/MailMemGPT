@@ -1,0 +1,47 @@
+=== MailRecallAI metrics report ===
+
+Run p1_enron: n_valid=200 errors=0
+  accuracy=0.7600 (Wilson 95% CI [0.6963, 0.8139]) macro-F1=0.7603
+  confusion (rows=true IGNORE,NOTIFY,RESPOND):
+    IGNORE   [40, 10, 2]
+    NOTIFY   [11, 52, 0]
+    RESPOND  [2, 23, 60]
+  IGNORE   P=0.755 R=0.769 F1=0.762 (n=52)
+  NOTIFY   P=0.612 R=0.825 F1=0.703 (n=63)
+  RESPOND  P=0.968 R=0.706 F1=0.816 (n=85)
+  triage: semantic 0.0% / LLM fallback 100.0%; tool calls total=0 mean=0.00
+  prompt tokens mean=4888 median=3974 p95=8691
+  budget util mean=45.4% over-B=0.0% under-0.5B=75.8%
+  dedup savings mean=0.0 total=0 tokens
+
+Run p2_enron: n_valid=200 errors=0
+  accuracy=0.7750 (Wilson 95% CI [0.7123, 0.8274]) macro-F1=0.7587
+  confusion (rows=true IGNORE,NOTIFY,RESPOND):
+    IGNORE   [30, 19, 3]
+    NOTIFY   [6, 53, 4]
+    RESPOND  [0, 13, 72]
+  IGNORE   P=0.833 R=0.577 F1=0.682 (n=52)
+  NOTIFY   P=0.624 R=0.841 F1=0.716 (n=63)
+  RESPOND  P=0.911 R=0.847 F1=0.878 (n=85)
+  triage: semantic 0.0% / LLM fallback 100.0%; tool calls total=332 mean=1.66
+  prompt tokens mean=15508 median=11092 p95=34710
+  budget util mean=47.7% over-B=0.0% under-0.5B=59.5%
+  dedup savings mean=0.0 total=0 tokens
+
+Run p3_enron: n_valid=200 errors=0
+  accuracy=0.7600 (Wilson 95% CI [0.6963, 0.8139]) macro-F1=0.7629
+  confusion (rows=true IGNORE,NOTIFY,RESPOND):
+    IGNORE   [42, 9, 1]
+    NOTIFY   [11, 52, 0]
+    RESPOND  [2, 25, 58]
+  IGNORE   P=0.764 R=0.808 F1=0.785 (n=52)
+  NOTIFY   P=0.605 R=0.825 F1=0.698 (n=63)
+  RESPOND  P=0.983 R=0.682 F1=0.806 (n=85)
+  triage: semantic 0.0% / LLM fallback 100.0%; tool calls total=80 mean=0.40
+  prompt tokens mean=8745 median=4636 p95=24563
+  budget util mean=51.5% over-B=0.0% under-0.5B=47.5%
+  dedup savings mean=83.8 total=4945 tokens
+
+p1_enron_vs_p2_enron: n_common=200 McNemar b=14 c=17 stat=0.129 p=0.7194 (chi2_cc); bootstrap dAcc=-0.0150 [-0.0700, +0.0400]
+p1_enron_vs_p3_enron: n_common=200 McNemar b=5 c=5 stat=5.000 p=1.0000 (exact_binomial); bootstrap dAcc=+0.0000 [-0.0300, +0.0300]
+p2_enron_vs_p3_enron: n_common=200 McNemar b=19 c=16 stat=0.114 p=0.7353 (chi2_cc); bootstrap dAcc=+0.0150 [-0.0450, +0.0700]

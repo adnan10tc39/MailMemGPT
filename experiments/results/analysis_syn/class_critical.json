@@ -1,0 +1,191 @@
+{
+  "n_total": 500,
+  "n_class_critical": 44,
+  "n_rest": 456,
+  "parent_gap": {
+    "min": 15,
+    "median": 42.5,
+    "max": 117
+  },
+  "runs": {
+    "p1_syn": {
+      "class_critical": {
+        "correct": 19,
+        "n": 44,
+        "accuracy": 0.4318181818181818,
+        "wilson_ci95": [
+          0.29682504164854573,
+          0.5777610925944561
+        ]
+      },
+      "rest": {
+        "correct": 441,
+        "n": 456,
+        "accuracy": 0.9671052631578947,
+        "wilson_ci95": [
+          0.9464400269017036,
+          0.9799659354992621
+        ]
+      },
+      "all": {
+        "correct": 460,
+        "n": 500,
+        "accuracy": 0.92,
+        "wilson_ci95": [
+          0.8928931229079627,
+          0.9407021975260784
+        ]
+      }
+    },
+    "p2_syn": {
+      "class_critical": {
+        "correct": 21,
+        "n": 44,
+        "accuracy": 0.4772727272727273,
+        "wilson_ci95": [
+          0.3375475794427176,
+          0.620647798638283
+        ]
+      },
+      "rest": {
+        "correct": 437,
+        "n": 456,
+        "accuracy": 0.9583333333333334,
+        "wilson_ci95": [
+          0.9358429207865954,
+          0.9731657465458078
+        ]
+      },
+      "all": {
+        "correct": 458,
+        "n": 500,
+        "accuracy": 0.916,
+        "wilson_ci95": [
+          0.8884001169044927,
+          0.9372562004777957
+        ]
+      }
+    },
+    "p3_syn": {
+      "class_critical": {
+        "correct": 22,
+        "n": 44,
+        "accuracy": 0.5,
+        "wilson_ci95": [
+          0.35831521095931473,
+          0.6416847890406853
+        ]
+      },
+      "rest": {
+        "correct": 425,
+        "n": 456,
+        "accuracy": 0.9320175438596491,
+        "wilson_ci95": [
+          0.9051198975435989,
+          0.9516968845831159
+        ]
+      },
+      "all": {
+        "correct": 447,
+        "n": 500,
+        "accuracy": 0.894,
+        "wilson_ci95": [
+          0.8639484611321094,
+          0.9180433394655388
+        ]
+      }
+    }
+  },
+  "pairwise": {
+    "p1_syn|p2_syn|class_critical": {
+      "b_first_only": 3,
+      "c_second_only": 5,
+      "p_value": 0.7265625,
+      "delta_accuracy": 0.045454545454545456,
+      "bootstrap_ci95": [
+        -0.06818181818181823,
+        0.15909090909090912
+      ]
+    },
+    "p1_syn|p2_syn|rest": {
+      "b_first_only": 10,
+      "c_second_only": 6,
+      "p_value": 0.454498291015625,
+      "delta_accuracy": -0.008771929824561403,
+      "bootstrap_ci95": [
+        -0.02631578947368418,
+        0.00877192982456143
+      ]
+    },
+    "p1_syn|p2_syn|all": {
+      "b_first_only": 13,
+      "c_second_only": 11,
+      "p_value": 0.8388197422027588,
+      "delta_accuracy": -0.004,
+      "bootstrap_ci95": [
+        -0.02399999999999991,
+        0.015999999999999903
+      ]
+    },
+    "p1_syn|p3_syn|class_critical": {
+      "b_first_only": 5,
+      "c_second_only": 8,
+      "p_value": 0.5810546875,
+      "delta_accuracy": 0.06818181818181818,
+      "bootstrap_ci95": [
+        -0.09090909090909094,
+        0.2272727272727273
+      ]
+    },
+    "p1_syn|p3_syn|rest": {
+      "b_first_only": 18,
+      "c_second_only": 2,
+      "p_value": 0.0004024505615234375,
+      "delta_accuracy": -0.03508771929824561,
+      "bootstrap_ci95": [
+        -0.054824561403508776,
+        -0.01754385964912275
+      ]
+    },
+    "p1_syn|p3_syn|all": {
+      "b_first_only": 23,
+      "c_second_only": 10,
+      "p_value": 0.03508203336969018,
+      "delta_accuracy": -0.026,
+      "bootstrap_ci95": [
+        -0.04800000000000004,
+        -0.0040000000000000036
+      ]
+    },
+    "p2_syn|p3_syn|class_critical": {
+      "b_first_only": 6,
+      "c_second_only": 7,
+      "p_value": 1.0,
+      "delta_accuracy": 0.022727272727272728,
+      "bootstrap_ci95": [
+        -0.1363636363636364,
+        0.18181818181818182
+      ]
+    },
+    "p2_syn|p3_syn|rest": {
+      "b_first_only": 19,
+      "c_second_only": 7,
+      "p_value": 0.028959274291992188,
+      "delta_accuracy": -0.02631578947368421,
+      "bootstrap_ci95": [
+        -0.04824561403508776,
+        -0.004385964912280715
+      ]
+    },
+    "p2_syn|p3_syn|all": {
+      "b_first_only": 25,
+      "c_second_only": 14,
+      "p_value": 0.10812902140605729,
+      "delta_accuracy": -0.022,
+      "bootstrap_ci95": [
+        -0.04600000000000004,
+        0.0020000000000000018
+      ]
+    }
+  }
+}

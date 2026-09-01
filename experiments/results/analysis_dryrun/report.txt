@@ -1,0 +1,16 @@
+=== MailRecallAI metrics report ===
+
+Run dryrun: n_valid=8 errors=0
+  accuracy=0.8750 (Wilson 95% CI [0.5291, 0.9776]) macro-F1=0.7778
+  confusion (rows=true IGNORE,NOTIFY,RESPOND):
+    IGNORE   [1, 1, 0]
+    NOTIFY   [0, 1, 0]
+    RESPOND  [0, 0, 5]
+  IGNORE   P=1.000 R=0.500 F1=0.667 (n=2)
+  NOTIFY   P=0.500 R=1.000 F1=0.667 (n=1)
+  RESPOND  P=1.000 R=1.000 F1=1.000 (n=5)
+  triage: semantic 87.5% / LLM fallback 12.5%; tool calls total=1 mean=0.12
+  prompt tokens mean=916 median=660 p95=2477
+  budget util mean=41.8% over-B=0.0% under-0.5B=80.0%
+  dedup savings mean=65.2 total=326 tokens
+

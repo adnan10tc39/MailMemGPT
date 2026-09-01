@@ -1,0 +1,21 @@
+\begin{tabular}{lrrrrl}
+\toprule
+Pair & $b$ & $c$ & Stat. & $p$ & Method \\
+\midrule
+p1_syn vs abl_no_dedup & 14 & 12 & 0.038 & 0.8445 & chi2\_cc \\
+p1_syn vs abl_no_budget & 10 & 12 & 10.000 & 0.8318 & exact\_binomial \\
+p1_syn vs abl_vector_only & 26 & 19 & 0.800 & 0.3711 & chi2\_cc \\
+p1_syn vs abl_naive_rag & 14 & 12 & 0.038 & 0.8445 & chi2\_cc \\
+p1_syn vs abl_summary_only & 26 & 20 & 0.543 & 0.4610 & chi2\_cc \\
+abl_no_dedup vs abl_no_budget & 1 & 5 & 1.000 & 0.2188 & exact\_binomial \\
+abl_no_dedup vs abl_vector_only & 18 & 13 & 0.516 & 0.4725 & chi2\_cc \\
+abl_no_dedup vs abl_naive_rag & 2 & 2 & 2.000 & 1.0000 & exact\_binomial \\
+abl_no_dedup vs abl_summary_only & 17 & 13 & 0.300 & 0.5839 & chi2\_cc \\
+abl_no_budget vs abl_vector_only & 19 & 10 & 2.207 & 0.1374 & chi2\_cc \\
+abl_no_budget vs abl_naive_rag & 6 & 2 & 2.000 & 0.2891 & exact\_binomial \\
+abl_no_budget vs abl_summary_only & 19 & 11 & 1.633 & 0.2012 & chi2\_cc \\
+abl_vector_only vs abl_naive_rag & 13 & 18 & 0.516 & 0.4725 & chi2\_cc \\
+abl_vector_only vs abl_summary_only & 1 & 2 & 1.000 & 1.0000 & exact\_binomial \\
+abl_naive_rag vs abl_summary_only & 17 & 13 & 0.300 & 0.5839 & chi2\_cc \\
+\bottomrule
+\end{tabular}
